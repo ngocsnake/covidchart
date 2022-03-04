@@ -18,28 +18,28 @@ function Table({ props }) {
                         setType({ column: 'name', desc: !type.desc })
                     }}
                     className="provincet">Tỉnh/Thành phố
-                    {(type.column !== 'name' && <FaSort></FaSort>) || Icon}
+                    {(type.column !== 'name' && <FaSort></FaSort>)}
                 </div>
                 <div
                     onClick={() => {
                         setType({ column: 'cases', desc: !type.desc })
                     }}
                     className="casest">Nhiễm
-                    {type.column !== 'cases' && <FaSort></FaSort> || Icon}
+                    {type.column !== 'cases' && <FaSort></FaSort>}
                 </div>
                 <div
                     onClick={() => {
                         setType({ column: 'casesToday', desc: !type.desc })
                     }}
                     className="todaycasest">Hôm nay
-                    {type.column !== 'casesToday' && <FaSort></FaSort> || Icon}
+                    {type.column !== 'casesToday' && <FaSort></FaSort>}
                 </div>
                 <div
                     onClick={() => {
                         setType({ column: 'death', desc: !type.desc })
                     }}
                     className="deatht">Tử vong
-                    {type.column !== 'death' && <FaSort></FaSort> || Icon}
+                    {type.column !== 'death' && <FaSort></FaSort>}
                 </div>
             </div>
         )
